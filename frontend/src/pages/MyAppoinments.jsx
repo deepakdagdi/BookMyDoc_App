@@ -12,7 +12,7 @@ function MyAppoinments() {
 
   const months= ["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
 
-  const navigate = useNavigate();
+  
   
   const slotDateFormate = (slotDate)=>{
     const dateArray = slotDate.split('_')
@@ -20,7 +20,7 @@ function MyAppoinments() {
 
   }
 
-  
+  const navigate = useNavigate();
 
   const getUserAppointments = async(req,res) =>{
     try {
